@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GDG Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="brand">GDG Admin</a>
+</header>
+
+
+<main class="page">
+
+    <h1>Admin Dashboard</h1>
+
+    <p id="adminNotice"></p>
+
+    <section id="adminContent" hidden>
+
+        <div class="panel">
+
+            <h2>Add New Event</h2>
+
+            <form id="addEventForm">
+
+                <label>Event Name</label>
+                <input id="newTitle" required>
+
+                <label>Category</label>
+
+                <select id="newCategory">
+                    <option>Workshop</option>
+                    <option>Hackathon</option>
+                    <option>Tech Talk</option>
+                    <option>Competition</option>
+                </select>
+
+                <label>Date</label>
+                <input type="date" id="newDate" required>
+
+                <label>Venue</label>
+                <input id="newVenue" required>
+
+                <label>Description</label>
+                <textarea id="newDescription" required></textarea>
+
+                <button class="btn" type="submit">
+                    Add Event
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <h2>Student Registration List</h2>
+
+        <div class="table-wrap">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Event</th>
+                        <th>Selection</th>
+                        <th>Participation</th>
+                        <th>Update</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="adminRows"></tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

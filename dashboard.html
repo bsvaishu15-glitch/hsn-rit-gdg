@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a href="index.html" class="brand">GDG Community</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="participation.html">Participation</a>
+        <a href="login.html" id="logoutLink">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <h1>My Dashboard</h1>
+
+    <p id="welcomeText"></p>
+
+    <div id="dashboardStats" class="stats"></div>
+
+    <h2>My Registered Events</h2>
+
+    <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Event Name</th>
+                    <th>Category</th>
+                    <th>Registration</th>
+                    <th>Selection Status</th>
+                    <th>Participation</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="myRegistrations"></tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

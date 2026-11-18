@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GDG Events</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a class="brand" href="index.html">GDG Community</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <h1>Upcoming Events</h1>
+
+    <p class="muted">
+        Explore workshops, hackathons and technical sessions.
+    </p>
+
+    <div class="toolbar">
+
+        <input
+            type="text"
+            id="eventSearch"
+            placeholder="Search events..."
+        >
+
+        <select id="eventFilter">
+
+            <option value="All">All Events</option>
+            <option>Workshop</option>
+            <option>Hackathon</option>
+            <option>Tech Talk</option>
+            <option>Competition</option>
+
+        </select>
+
+    </div>
+
+    <div class="grid" id="allEvents"></div>
+
+</main>
+
+
+<footer>
+    GDG Campus Community
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
